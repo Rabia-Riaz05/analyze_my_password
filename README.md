@@ -1,5 +1,4 @@
-# A Python tool that analyzes the strength of your password and checks if it has been exposed in past data breaches using the HaveIBeenPwned API.
-
+# A CLI-based Python tool that analyzes the strength of your password and checks if it has been exposed in past data breaches using the HaveIBeenPwned API.
 
 
 # Features:
@@ -23,6 +22,10 @@ Run the tool
  python3 analyze_my_password
 
 
+# Install the requirements
+pip install -r requirements.txt
+
+
 # How It Works:
 Enter your password (input is hidden for security).
 The tool checks if it meets the strength criteria:
@@ -42,6 +45,8 @@ You can choose to check another password or exit.
 
 
 # Security Note:
+Your password is never sent to HaveIBeenPwned in plain text.
+It is first hashed using SHA-1, and only the first 5 characters of the hash are sent for verification (following HIBP's k-anonymity model).
 
 Your password is never sent to HaveIBeenPwned in plain text.
 It is first hashed using SHA-1, and only the first 5 characters of the hash are sent for verification (following HIBP's k-anonymity model).
