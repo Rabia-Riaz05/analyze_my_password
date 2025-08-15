@@ -47,6 +47,3 @@ You can choose to check another password or exit.
 # Security Note:
 Your password is never sent to HaveIBeenPwned in plain text.
 It is first hashed using SHA-1, and only the first 5 characters of the hash are sent for verification (following HIBP's k-anonymity model).
-
-Your password is never sent to HaveIBeenPwned in plain text.
-It is first hashed using SHA-1, and only the first 5 characters of the hash are sent for verification (following HIBP's k-anonymity model).
